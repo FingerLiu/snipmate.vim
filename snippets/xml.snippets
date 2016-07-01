@@ -1,0 +1,30 @@
+snippet xml
+	<?xml version="1.0" encoding="UTF-8"?>
+
+# tag
+snippet t
+	<${1:} ${2}>
+			
+	</$1>
+# inline tag
+snippet ti
+	<${1:} ${2}>${3}</$1>
+snippet tt
+	<${1:} />
+snippet c
+	<!-- ${1:} -->
+snippet k
+	${1:}="${2}"${3}
+snippet form
+	<form>
+		<header>
+		<!-- Buttons go here-->
+		${1}
+		</header>
+		<sheet>
+		<!-- Content goes here: -->
+			${2}
+		</sheet>
+	</form>
+snippet btn
+	<button name="${1:name}" type="${2:type}" string="${3:string}" ${4}/>
