@@ -3,18 +3,26 @@ snippet xml
 
 # tag
 snippet t
-	<${1:} ${2}>
-			
+	<${1:}${2}>
+		
 	</$1>
 # inline tag
 snippet ti
-	<${1:} ${2}>${3}</$1>
+	<${1}${2}>${3}</$1>
 snippet tt
-	<${1:} />
+	<${1}${2}/>
 snippet c
 	<!-- ${1:} -->
 snippet k
 	${1:}="${2}"${3}
+snippet record
+	<record id="${1:id}" model="${2:ir.ui.view}">
+		<field name="name">${3:name}</field>
+		<field name="model">${4:model}</field>
+		<field name="arch" type="xml">
+				${5}
+		</field>
+	</record>
 snippet form
 	<form>
 		<header>
